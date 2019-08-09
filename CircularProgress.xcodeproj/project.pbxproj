@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C523EA792F9175E0C21E82 /* Pods_CircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC564B7BF7EF892C3F99316 /* Pods_CircularProgress.framework */; };
 		7FA196C322FDB02700CC6C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA196C222FDB02700CC6C34 /* AppDelegate.swift */; };
 		7FA196C522FDB02700CC6C34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA196C422FDB02700CC6C34 /* ViewController.swift */; };
 		7FA196C822FDB02700CC6C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA196C622FDB02700CC6C34 /* Main.storyboard */; };
 		7FA196CA22FDB02900CC6C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA196C922FDB02900CC6C34 /* Assets.xcassets */; };
 		7FA196CD22FDB02900CC6C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA196CB22FDB02900CC6C34 /* LaunchScreen.storyboard */; };
+		7FA196D922FDB17200CC6C34 /* GradientCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA196D822FDB17200CC6C34 /* GradientCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260717629A8B712DFBA6BD98 /* Pods-CircularProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircularProgress/Pods-CircularProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA196BF22FDB02700CC6C34 /* CircularProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA196C222FDB02700CC6C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA196C422FDB02700CC6C34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		7FA196C922FDB02900CC6C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FA196CC22FDB02900CC6C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FA196CE22FDB02900CC6C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA196D822FDB17200CC6C34 /* GradientCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircularProgress.swift; sourceTree = "<group>"; };
+		D0C0FBFE1115CA405714CD65 /* Pods-CircularProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircularProgress/Pods-CircularProgress.release.xcconfig"; sourceTree = "<group>"; };
+		FDC564B7BF7EF892C3F99316 /* Pods_CircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C523EA792F9175E0C21E82 /* Pods_CircularProgress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5662DED2B390B4DDD940FBDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC564B7BF7EF892C3F99316 /* Pods_CircularProgress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FA196B622FDB02700CC6C34 = {
 			isa = PBXGroup;
 			children = (
 				7FA196C122FDB02700CC6C34 /* CircularProgress */,
 				7FA196C022FDB02700CC6C34 /* Products */,
+				D3DC63136C5AC8F127163516 /* Pods */,
+				5662DED2B390B4DDD940FBDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,56 @@
 		7FA196C122FDB02700CC6C34 /* CircularProgress */ = {
 			isa = PBXGroup;
 			children = (
-				7FA196C222FDB02700CC6C34 /* AppDelegate.swift */,
-				7FA196C422FDB02700CC6C34 /* ViewController.swift */,
-				7FA196C622FDB02700CC6C34 /* Main.storyboard */,
+				7FA196D722FDB15600CC6C34 /* Gradient Circular Progress */,
+				7FA196D622FDB05D00CC6C34 /* User Interface */,
+				7FA196D522FDB04600CC6C34 /* Controllers */,
+				7FA196D422FDB03600CC6C34 /* Root */,
 				7FA196C922FDB02900CC6C34 /* Assets.xcassets */,
-				7FA196CB22FDB02900CC6C34 /* LaunchScreen.storyboard */,
 				7FA196CE22FDB02900CC6C34 /* Info.plist */,
 			);
 			path = CircularProgress;
+			sourceTree = "<group>";
+		};
+		7FA196D422FDB03600CC6C34 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				7FA196C222FDB02700CC6C34 /* AppDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		7FA196D522FDB04600CC6C34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FA196C422FDB02700CC6C34 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7FA196D622FDB05D00CC6C34 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7FA196C622FDB02700CC6C34 /* Main.storyboard */,
+				7FA196CB22FDB02900CC6C34 /* LaunchScreen.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		7FA196D722FDB15600CC6C34 /* Gradient Circular Progress */ = {
+			isa = PBXGroup;
+			children = (
+				7FA196D822FDB17200CC6C34 /* GradientCircularProgress.swift */,
+			);
+			path = "Gradient Circular Progress";
+			sourceTree = "<group>";
+		};
+		D3DC63136C5AC8F127163516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				260717629A8B712DFBA6BD98 /* Pods-CircularProgress.debug.xcconfig */,
+				D0C0FBFE1115CA405714CD65 /* Pods-CircularProgress.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FA196D122FDB02900CC6C34 /* Build configuration list for PBXNativeTarget "CircularProgress" */;
 			buildPhases = (
+				ED49E3F6BDC105EC6A9634A2 /* [CP] Check Pods Manifest.lock */,
 				7FA196BB22FDB02700CC6C34 /* Sources */,
 				7FA196BC22FDB02700CC6C34 /* Frameworks */,
 				7FA196BD22FDB02700CC6C34 /* Resources */,
+				8BC60D0EF0701C22CCCA4B4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +191,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BC60D0EF0701C22CCCA4B4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CircularProgress/Pods-CircularProgress-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GradientCircularProgress/GradientCircularProgress.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientCircularProgress.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircularProgress/Pods-CircularProgress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED49E3F6BDC105EC6A9634A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CircularProgress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FA196BB22FDB02700CC6C34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7FA196C522FDB02700CC6C34 /* ViewController.swift in Sources */,
+				7FA196D922FDB17200CC6C34 /* GradientCircularProgress.swift in Sources */,
 				7FA196C322FDB02700CC6C34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +389,7 @@
 		};
 		7FA196D222FDB02900CC6C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260717629A8B712DFBA6BD98 /* Pods-CircularProgress.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +408,7 @@
 		};
 		7FA196D322FDB02900CC6C34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C0FBFE1115CA405714CD65 /* Pods-CircularProgress.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
