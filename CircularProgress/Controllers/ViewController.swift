@@ -20,9 +20,7 @@ class ViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: true)
-        
+    
     }
 
     // MARK: - UI Actions
@@ -32,10 +30,17 @@ class ViewController: UIViewController {
         
         let rect = CGRect(x: 120, y: 120, width: 220, height: 220)
         
-        let progressView = progress.show(frame: rect, message: "Loading...", style: MyStyle())
+        let progressView = progress.show(frame: rect, message: "", style: MyStyle())
         view.addSubview(progressView!)
         
 //        progress.dismiss(progress: progressView!)
+        
+        
+        
+        //
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: true)
+        
+        
     }
     
     // MARK: - TIMER HELPER
